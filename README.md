@@ -1,2 +1,3 @@
 # tailwind-layer
-Make tailwind IntelliSense list my custom class in @layer Utilities
+
+Compile your tailwindcss components into tailwind plugins and enjoy full IntelliSense autocompletion!
