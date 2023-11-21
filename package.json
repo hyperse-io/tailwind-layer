@@ -86,7 +86,7 @@
     "node": ">=16.8"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "packageManager": "yarn@1.22.21"
 }
