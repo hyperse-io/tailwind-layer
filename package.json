@@ -4,7 +4,7 @@
   "description": "Compile your tailwindcss components into tailwind plugins and enjoy full autocompletion!",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hyperse-io/tailwind-layer"
+    "url": "git+https://github.com/hyperse-io/tailwind-layer.git"
   },
   "type": "module",
   "exports": {
@@ -16,7 +16,7 @@
   },
   "types": "./dist/index.d.ts",
   "bin": {
-    "twl": "./bin/twl.mjs"
+    "twl": "bin/twl.mjs"
   },
   "files": [
     "./bin/",
@@ -33,7 +33,7 @@
     "typecheck": "tsc --project ./tsconfig.json --noEmit",
     "lint-staged-files": "lint-staged --allow-empty",
     "changeset": "changeset",
-    "release": "yarn build-release && changeset publish",
+    "release": "yarn build && changeset publish",
     "cz": "cz"
   },
   "config": {
