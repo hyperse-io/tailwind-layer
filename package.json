@@ -29,7 +29,6 @@
     "lint-fix": "yarn lint --fix",
     "test": "run-s test:*",
     "test:unit": "vitest run",
-    "postinstall": "is-ci || yarn husky install",
     "typecheck": "tsc --project ./tsconfig.json --noEmit",
     "lint-staged-files": "lint-staged --allow-empty",
     "changeset": "changeset",
