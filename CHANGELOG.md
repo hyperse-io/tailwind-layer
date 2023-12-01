@@ -1,5 +1,11 @@
 # @hyperse-io/tailwind-layer
 
+## 1.0.2
+
+### Patch Changes
+
+- a97c7ae: add `prettier` & gitflow
+
 ## 1.0.1
 
 ### Patch Changes
