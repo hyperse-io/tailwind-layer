@@ -28,6 +28,10 @@ jobs:
         run: |
           yarn install
 
+      - name: Unit tests
+        run: |
+          yarn test-unit --passWithNoTests
+
       # @link https://github.com/changesets/action
       - name: Create Release Pull Request or Publish to npm
         id: changesets
