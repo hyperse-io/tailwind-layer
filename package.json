@@ -27,8 +27,8 @@
     "build": "tsup",
     "lint": "eslint --cache --ext \".js,.ts,.tsx\" --report-unused-disable-directives --report-unused-disable-directives src",
     "lint-fix": "yarn lint --fix",
-    "test": "run-s test-*",
-    "test-unit": "vitest run",
+    "test": "run-s test:unit",
+    "test:unit": "vitest run",
     "typecheck": "tsc --project ./tsconfig.json --noEmit",
     "lint-staged-files": "lint-staged --allow-empty",
     "changeset": "changeset",
@@ -51,17 +51,14 @@
     "@changesets/cli": "2.27.1",
     "@commitlint/cli": "18.4.3",
     "@commitlint/config-conventional": "18.4.3",
-    "@playwright/test": "^1.40.1",
-    "@types/aos": "3.0.7",
     "@types/node": "^20.10.1",
-    "@types/postcss-js": "^4.0.4",
+    "@types/postcss-js": "^4",
     "@types/shell-quote": "1.7.5",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1",
     "commitizen": "4.3.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.54.0",
-    "eslint-config-next": "^14.0.3",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
     "husky": "8.0.3",
@@ -87,5 +84,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@1.22.21"
+  "packageManager": "yarn@4.0.2"
 }
