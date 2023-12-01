@@ -45,7 +45,9 @@ export async function bundle(
   }
 
   const handlerStr = [
-    '// eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function',
+    layers.length
+      ? ''
+      : '// eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function',
     'const handler = (api) => {',
     `\t${layers.join('\n\t\t')}`,
     '};',
@@ -70,6 +72,14 @@ export async function bundle(
   const prettier = await import('prettier');
   const prettierStr = await prettier.format(content, {
     parser: 'babel',
+    tabWidth: 2,
+    semi: true,
+    singleQuote: true,
+    trailingComma: 'es5',
+    bracketSameLine: false,
+    useTabs: false,
+    printWidth: 80,
+    endOfLine: 'auto',
   });
   await writeFile(output, prettierStr, 'utf-8');
 }

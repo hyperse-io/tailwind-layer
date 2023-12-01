@@ -24,8 +24,9 @@ jobs:
         with:
           node-version: 18.x
 
-      - name: 📥 Monorepo install
-        uses: ./.github/actions/yarn-nm-install
+      - name: 📥 Yarn install
+        run: |
+          yarn install
 
       # @link https://github.com/changesets/action
       - name: Create Release Pull Request or Publish to npm
