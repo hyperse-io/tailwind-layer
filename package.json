@@ -83,7 +83,7 @@
     "prettier": "^3.1.0"
   },
   "engines": {
-    "node": ">=16.8"
+    "node": ">=18"
   },
   "publishConfig": {
     "access": "public"
