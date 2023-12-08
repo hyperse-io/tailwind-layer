@@ -1,6 +1,9 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.3.1/schema.json",
-  "changelog": "@changesets/cli/changelog",
+  "changelog": [
+    "@changesets/changelog-github",
+    { "repo": "hyperse-io/tailwind-layer" }
+  ],
   "commit": false,
   "fixed": [],
   "linked": [],
