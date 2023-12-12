@@ -47,7 +47,7 @@
     "sade": "^1.8.1"
   },
   "devDependencies": {
-    "@armit/eslint-config-bases": "0.1.0",
+    "@armit/eslint-config-bases": "0.1.2",
     "@changesets/changelog-github": "0.5.0",
     "@changesets/cli": "2.27.1",
     "@commitlint/cli": "18.4.3",
