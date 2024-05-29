@@ -51,7 +51,7 @@ export default config;
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "keen-slider/keen-slider.min.css";
+@import 'keen-slider/keen-slider.min.css';
 
 * {
   scroll-behavior: smooth;

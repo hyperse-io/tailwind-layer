@@ -959,7 +959,6 @@ __metadata:
     npm-run-all: "npm:^4.1.5"
     postcss: "npm:^8.4.38"
     postcss-js: "npm:^4.0.1"
-    prettier: "npm:^3.2.5"
     sade: "npm:^1.8.1"
     shell-quote: "npm:1.8.1"
     tsup: "npm:^8.0.2"
