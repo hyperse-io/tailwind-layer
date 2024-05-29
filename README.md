@@ -1,10 +1,10 @@
-# tailwind-layer
+# @hyperse/tailwind-layer
 
 Compile your tailwindcss components into tailwind plugins and enjoy full IntelliSense autocompletion!
 
 ## Usage
 
-1. yarn add @hyperse-io/layer
+1. yarn add @hyperse/tailwind-layer
 
 2. packages.json
 
@@ -33,7 +33,7 @@ export default config;
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "keen-slider/keen-slider.min.css";
+@import 'keen-slider/keen-slider.min.css';
 
 * {
   scroll-behavior: smooth;

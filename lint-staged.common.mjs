@@ -1,5 +1,5 @@
-const path = require('path');
-const escape = require('shell-quote').quote;
+import path from 'path';
+import { quote } from 'shell-quote';
 
 const isWin = process.platform === 'win32';
 
@@ -30,7 +30,7 @@ const eslintGlobalRulesForFix = [
  * Lint-staged command for running eslint in packages or apps.
  * @param {{cwd: string, files: string[], fix: boolean, fixType?: ('problem'|'suggestion'|'layout'|'directive')[], cache: boolean, rules?: string[], maxWarnings?: number}} params
  */
-const getEslintFixCmd = ({
+export const getEslintFixCmd = ({
   cwd,
   files,
   rules,
@@ -54,7 +54,7 @@ const getEslintFixCmd = ({
     fix ? '--fix' : '',
     cliFixType.length > 0 ? `--fix-type ${cliFixType.join(',')}` : '',
     maxWarnings !== undefined ? `--max-warnings=${maxWarnings}` : '',
-    cliRules.length > 0 ? `--rule ${cliRules.join('--rule ')}` : '',
+    cliRules.length > 0 ? `--rule ${cliRules.join(' --rule ')}` : '',
     files
       // makes output cleaner by removing absolute paths from filenames
       .map((f) => `"./${path.relative(cwd, f)}"`)
@@ -74,15 +74,7 @@ const getEslintFixCmd = ({
  * @param {string[]} filenames
  * @returns {string} Return concatenated and escaped filenames
  */
-const concatFilesForPrettier = (filenames) =>
+export const concatFilesForPrettier = (filenames) =>
   filenames
-    .map((filename) => `"${isWin ? filename : escape([filename])}"`)
+    .map((filename) => `"${isWin ? filename : quote([filename])}"`)
     .join(' ');
-
-const concatFilesForStylelint = concatFilesForPrettier;
-
-module.exports = {
-  concatFilesForPrettier,
-  concatFilesForStylelint,
-  getEslintFixCmd,
-};

@@ -1,24 +1,16 @@
 {
+  "extends": "@hyperse/eslint-config-hyperse/tsconfig.base.json",
   "compilerOptions": {
-    "strict": true,
-    "useUnknownInCatchVariables": true,
-    "allowJs": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "NodeNext",
-    "target": "ESNext",
-    "moduleResolution": "NodeNext",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "incremental": true,
-    "declaration": true,
-    "newLine": "lf",
-    "baseUrl": ".",
-    "rootDir": ".",
+    "baseUrl": "./src",
     "outDir": "dist",
-    "types": ["vitest/globals"]
+    "rootDir": ".",
+    "types": [
+      "vitest/globals"
+    ],
+    "paths": {}
   },
-  "exclude": ["**/node_modules", "**/.*/", "dist", "build"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }

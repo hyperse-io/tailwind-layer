@@ -1,7 +1,7 @@
 import chokidar from 'chokidar';
 import sade from 'sade';
-import { version, name } from '../package.json';
-import { bundle } from './tailwind-layer-plugin.js';
+import { name, version } from '../package.json';
+import { bundle } from './bundle.js';
 
 export const cmdMain = () => {
   return sade(name, true)

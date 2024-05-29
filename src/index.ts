@@ -1,2 +1,2 @@
-export * from './tailwind-layer-plugin.js';
+export * from './bundle.js';
 export * from './main.js';
