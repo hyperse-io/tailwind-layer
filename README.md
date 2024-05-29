@@ -1,5 +1,23 @@
 # @hyperse/tailwind-layer
 
+<p align="left">
+  <a aria-label="Build" href="https://github.com/hyperse-io/tailwind-layer/actions?query=workflow%3ACI">
+    <img alt="build" src="https://img.shields.io/github/actions/workflow/status/hyperse-io/tailwind-layer/ci-integrity.yml?branch=main&label=ci&logo=github&style=flat-quare&labelColor=000000" />
+  </a>
+  <a aria-label="stable version" href="https://www.npmjs.com/package/@hyperse/tailwind-layer">
+    <img alt="stable version" src="https://img.shields.io/npm/v/%40hyperse%2Ftailwind-layer?branch=main&label=version&logo=npm&style=flat-quare&labelColor=000000" />
+  </a>
+  <a>
+    <img alt="LoC" src="https://img.shields.io/bundlephobia/min/%40hyperse%2Ftailwind-layer?style=flat-quare&labelColor=000000" />
+  </a>
+  <a aria-label="Top language" href="https://github.com/hyperse-io/tailwind-layer/search?l=typescript">
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/hyperse-io/tailwind-layer?style=flat-square&labelColor=000&color=blue">
+  </a>
+  <a aria-label="Licence" href="https://github.com/hyperse-io/tailwind-layer/blob/main/LICENSE">
+    <img alt="Licence" src="https://img.shields.io/github/license/hyperse-io/tailwind-layer?style=flat-quare&labelColor=000000" />
+  </a>
+</p>
+
 Compile your tailwindcss components into tailwind plugins and enjoy full IntelliSense autocompletion!
 
 ## Usage
@@ -33,7 +51,7 @@ export default config;
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'keen-slider/keen-slider.min.css';
+@import "keen-slider/keen-slider.min.css";
 
 * {
   scroll-behavior: smooth;
