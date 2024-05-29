@@ -1,5 +1,11 @@
 # @hyperse-io/tailwind-layer
 
+## 1.0.4
+
+### Patch Changes
+
+- [`033a699`](https://github.com/hyperse-io/tailwind-layer/commit/033a699679fa51b8f97927a663ac5c8d59d8360d) Thanks [@tianyingchun](https://github.com/tianyingchun)! - bump version
+
 ## 1.0.3
 
 ### Patch Changes
