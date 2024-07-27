@@ -22,6 +22,7 @@ export async function bundle(
   const g = new Glob(pattern, {
     nodir: true,
     absolute: true,
+    cwd: process.cwd(),
   });
 
   for await (const file of g) {
@@ -47,7 +48,7 @@ export async function bundle(
   const handlerStr = [
     layers.length
       ? ''
-      : '// eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function',
+      : '// eslint-disable-next-line @typescript-eslint/no-unused-vars',
     'const handler = (api) => {',
     `\t${layers.join('\n\t\t')}`,
     '};',
