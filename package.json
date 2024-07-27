@@ -1,6 +1,6 @@
 {
   "name": "@hyperse/tailwind-layer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Compile your tailwindcss components into tailwind plugins and enjoy full autocompletion!",
   "repository": {
     "type": "git",
